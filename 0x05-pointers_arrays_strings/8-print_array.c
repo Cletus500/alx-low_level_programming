@@ -7,6 +7,7 @@
  * @a: an input array
  * Return: void
  */
+
 void print_array(int *a, int n)
 {
 	int i;
