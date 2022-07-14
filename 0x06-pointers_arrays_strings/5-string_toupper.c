@@ -6,6 +6,7 @@
  * @s: an input string
  * Return: char pointer to converted string
  */
+
 char *string_toupper(char *str)
 {
 	char *start = str;
@@ -16,5 +17,6 @@ char *string_toupper(char *str)
 			*str -= 32;
 		str++;
 	}
-	return (start);
+
+	return (str);
 }
