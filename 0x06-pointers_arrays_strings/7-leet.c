@@ -8,17 +8,18 @@
 
 char *leet(char *str)
 {
-	int index1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i = 0, j;
+	char subs[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'},
+	     str[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	while (str[++index1])
+	while (str[i])
 	{
-		for (index2 = 0; index2 <= 7; index2++)
-		{
-			if (str[index1] == leet[index2] ||
-					str[index1] - 32 == leet[index2])
-				st[index1] = index2 + '0';
-		}
+		for (j = 0; j < 10; j++)
+			if (str[i] == str[j])
+				str[i] = subs[j];
+
+		i++;
 	}
+
 	return (str);
 }
