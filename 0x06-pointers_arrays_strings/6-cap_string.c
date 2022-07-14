@@ -18,6 +18,7 @@ char *cap_string(char *str)
 		{
 			str[i] = str[i] - cap;
 		}
+
 		cap = 0;
 
 		for (x = 0; x <= 12; x++)
