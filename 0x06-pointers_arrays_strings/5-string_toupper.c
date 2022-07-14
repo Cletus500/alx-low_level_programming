@@ -4,19 +4,19 @@
  * string_toupper - a function that changes all lowercase letters of a  string
  * to uppercase
  * @s: an input string
- * Return: char pointer to converted string
+ * Return: capitialized string
  */
 
 char *string_toupper(char *str)
 {
-	char *start = str;
+	int i;
 
-	while (*str)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (*str >= 'a' && *str <= 'z')
-			*str -= 32;
-		str++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] = str[i] - 32;
 	}
-
-	return (start);
+	return (str);
 }
+
+
