@@ -6,12 +6,14 @@
  * @c: input
  * Return: Always 0 (Success)
  */
+
 char *_strchr(char *s, char c)
 {
-	
 	while (c != *s)
 	{
+
 		s++;
 	}
+
 	return (s);
 }
