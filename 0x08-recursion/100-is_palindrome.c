@@ -1,5 +1,5 @@
 #include "main.h"
-int check_palindrome(char *s, int len, int i) ;
+int check_palindrome(char *s, int len, int i);
 
 /**
  * str_len - getting string len
